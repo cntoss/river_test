@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'features/login/ui/auth_checker.dart';
+// import 'todo/todo_main.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const AuthChecker(),
+      // home:const TodoPage(),
+     home: const AuthChecker(),
     );
   }
 }
